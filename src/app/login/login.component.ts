@@ -10,13 +10,16 @@ declare function init_plugins();
 })
 export class LoginComponent implements OnInit {
 
-  constructor( public router: Router) { }
+  constructor( public router: Router ) { }
 
   ngOnInit() {
     init_plugins();
   }
+
   ingresar() {
-    this.router.navigate(['/dashboard']);
+
+    this.router.navigate([ '/dashboard' ]);
+
   }
 
 }

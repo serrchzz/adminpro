@@ -5,16 +5,17 @@ import {
   SettingsService,
   SidebarService,
   SharedService
-} from './service.index';
+ } from './service.index';
+
 
 @NgModule({
   imports: [
     CommonModule
   ],
   providers: [
-  SettingsService,
-  SidebarService,
-  SharedService
+    SettingsService,
+    SidebarService,
+    SharedService
   ],
   declarations: []
 })

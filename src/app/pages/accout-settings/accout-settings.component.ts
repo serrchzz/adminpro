@@ -1,5 +1,6 @@
-import { Component, OnInit, Inject } from '@angular/core';
+import { Component, Inject, OnInit } from '@angular/core';
 import { DOCUMENT } from '@angular/platform-browser';
+
 import { SettingsService } from '../../services/service.index';
 
 @Component({
@@ -17,13 +18,13 @@ export class AccoutSettingsComponent implements OnInit {
 
   cambiarColor( tema: string, link: any ) {
 
-   this.aplicarCheck( link );
+    this.aplicarCheck( link );
 
-   this._ajustes.aplicarTema( tema );
+    this._ajustes.aplicarTema( tema );
 
   }
 
-  aplicarCheck( link: any) {
+  aplicarCheck( link: any ) {
 
     let selectores: any = document.getElementsByClassName('selector');
 
@@ -33,9 +34,9 @@ export class AccoutSettingsComponent implements OnInit {
 
     link.classList.add('working');
 
-
   }
-  colocarCheck(){
+
+  colocarCheck() {
 
     let selectores: any = document.getElementsByClassName('selector');
 
@@ -47,6 +48,7 @@ export class AccoutSettingsComponent implements OnInit {
         break;
       }
     }
+
   }
 
 }
